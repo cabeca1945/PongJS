@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pong</title>
+
+    <style>
+
+        #canvas {
+            width: 500px;
+            height: 500px;
+
+            margin-left: 0%;
+
+            border: 2px solid #ffffff;
+        }
+
+        #player {
+            width: 25px;
+            height: 100px;
+
+            background-color: #ffffff;
+
+            position: absolute;
+
+            margin-left: 25px;
+            margin-top: 190px;
+        }
+
+        #enemy {
+            width: 25px;
+            height: 100px;
+
+            background-color: #ffffff;
+
+            position: absolute;
+
+            margin-left: 450px;
+            margin-top: 190px;
+        }
+        
+        #ball {
+            width: 25px;
+            height: 25px;
+
+            position: absolute;
+
+            margin-left: 220px;
+            margin-top: 230px;
+            border-radius: 100px;
+
+            background-color: #ffffff;
+        }
+
+        #canvas2{
+            width: 500px;
+            height: 500px;
+
+            border: 2px solid #ffffff;
+        }
+
+        #canvas3{
+            width: 500px;
+            height: 500px;
+
+            border: 2px solid #ffffff;
+        }
+
+        #canvas0{
+            width: 500px;
+            height: 500px;
+
+            border: 2px solid #ffffff;
+        }
+    </style>
+
+</head>
+<body bgcolor="#000">
+
+    <div id="canvas0">
+        <h1 style="color: #ffffff; font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center; margin-top: 50px;">CHOOSE THE DIFICULT..</h1>
+        <br>
+        <center>
+            <button onclick="startGame(1)" style="width: 130px; height: 25px; background-color: #000; color: #ffffff; font-family: 'Times New Roman', Times, serif;">SUPER EASY</button>
+            <br><br>
+            <button onclick="startGame(2)" style="width: 130px; height: 25px; background-color: #000; color: #ffffff; font-family: 'Times New Roman', Times, serif;">EASY</button>
+            <br><br>
+            <button onclick="startGame(3)" style="width: 130px; height: 25px; background-color: #000; color: #ffffff; font-family: 'Times New Roman', Times, serif;">MEDIUM</button>
+            <br><br>
+            <button onclick="startGame(4)" style="width: 130px; height: 25px; background-color: #000; color: #ffffff; font-family: 'Times New Roman', Times, serif;">HARD</button>
+            <br><br>
+            <button onclick="startGame(5)" style="width: 130px; height: 25px; background-color: #000; color: #ffffff; font-family: 'Times New Roman', Times, serif;">SUPER HARD</button>
+            <br><br>
+            <button onclick="startGame(6)" style="width: 130px; height: 25px; background-color: #000; color: #ffffff; font-family: 'Times New Roman', Times, serif;">IMPOSSIBLE</button>
+            <br><br>
+            <button onclick="startGame(7)" style="width: 130px; height: 25px; background-color: #000; color: #00ff00; font-family: 'Times New Roman', Times, serif;">DEBUG MODE</button>
+        </center>
+    </div>
+
+    <div id="canvas">
+        <div id="player"></div>
+        <div id="ball"></div>
+        <div id="enemy"></div>
+    </div>
+
+    <div id="canvas2">
+        <center>
+            <h1 style="color: #00ff00; text-align: center; margin-top: 250px; font-family: 'Courier New', Courier, monospace;">YOU WIN!</h1>
+            <br>
+            <h1 style="color: #00ff00; text-align: center; margin-top: -20px; font-size: 20px;font-family: 'Courier New', Courier, monospace;">PRESS SPACE TO RESTART...</h1>
+        </center>
+    </div>
+
+    <div id="canvas3">
+        <center>
+            <h1 style="color: #ff0000; text-align: center; margin-top: 250px; font-family: 'Courier New', Courier, monospace;">YOU LOSE!</h1>
+            <br>
+            <h1 style="color: #ff0000; text-align: center; margin-top: -20px; font-size: 20px;font-family: 'Courier New', Courier, monospace;">PRESS SPACE TO RESTART...</h1>
+        </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
